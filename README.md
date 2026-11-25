@@ -153,11 +153,11 @@ ASCII            : VISUAL LAYER
 
 <div align="center">
 
-<img src="https://github-stats-extended.vercel.app/api?username=SuenoOcho&amp;show_icons=true&amp;title_color=00FF41&amp;icon_color=00FF41&amp;text_color=B8FFC9&amp;bg_color=050B07&amp;border_color=0B5A24" width="100%" style="max-width:700px;height:auto;" alt="GitHub statistics for Sueno Ocho">
+<img src="https://github-stats-extended.vercel.app/api?username=SuenoOcho&amp;show_icons=true&amp;title_color=00FF41&amp;icon_color=00FF41&amp;text_color=B8FFC9&amp;bg_color=050B07&amp;border_color=0B5A24" width="480" style="max-width:100%;height:auto;" alt="GitHub statistics for Sueno Ocho">
 
-<img src="https://streak-stats.demolab.com/?user=SuenoOcho&amp;background=050B07&amp;stroke=00FF41&amp;stroke_width=1&amp;currStreakNum=00FF41&amp;sideNums=B8FFC9&amp;currStreakLabel=00FF41&amp;sideLabels=B8FFC9&amp;dates=5A8F68&amp;fire=00FF41" width="100%" style="max-width:700px;height:auto;" alt="GitHub contribution streak for Sueno Ocho">
+<img src="https://streak-stats.demolab.com/?user=SuenoOcho&amp;background=050B07&amp;stroke=00FF41&amp;stroke_width=1&amp;currStreakNum=00FF41&amp;sideNums=B8FFC9&amp;currStreakLabel=00FF41&amp;sideLabels=B8FFC9&amp;dates=5A8F68&amp;fire=00FF41" width="480" style="max-width:100%;height:auto;" alt="GitHub contribution streak for Sueno Ocho">
 
-<img src="https://github-stats-extended.vercel.app/api/top-langs?username=SuenoOcho&amp;layout=compact&amp;title_color=00FF41&amp;text_color=B8FFC9&amp;bg_color=050B07&amp;border_color=0B5A24" width="100%" style="max-width:700px;height:auto;" alt="Most-used programming languages for Sueno Ocho">
+<img src="https://github-stats-extended.vercel.app/api/top-langs?username=SuenoOcho&amp;layout=compact&amp;title_color=00FF41&amp;text_color=B8FFC9&amp;bg_color=050B07&amp;border_color=0B5A24" width="480" style="max-width:100%;height:auto;" alt="Most-used programming languages for Sueno Ocho">
 
 </div>
 
