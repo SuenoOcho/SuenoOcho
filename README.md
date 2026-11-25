@@ -95,7 +95,6 @@ $ ./initialize.sh --modules
 ```text
 PYTHON          : CONFIRMED
 Z#              : CONFIRMED
-OTHER LANGUAGES : [ RESERVED FOR REAL ADDITIONS ]
 ```
 
 ### FRAMEWORKS
