@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SUENO OCHO — a Minecraft-inspired portfolio of a curious student developer. Building things, exploring ideas, creating experiences.">
+  <meta name="author" content="Sueno Ocho">
+  <meta name="theme-color" content="#0b1a10">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SUENO OCHO — Minecraft Portfolio">
+  <meta property="og:description" content="Building things. Exploring ideas. Creating experiences. A pixel world by Sueno Ocho.">
+  <meta property="og:url" content="https://suenocho.github.io/SuenoOcho/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SUENO OCHO — Minecraft Portfolio">
+  <meta name="twitter:description" content="Building things. Exploring ideas. Creating experiences.">
+  <link rel="canonical" href="https://suenocho.github.io/SuenoOcho/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>SUENO OCHO — Minecraft Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="svg-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="pixel-player" viewBox="0 0 16 21" shape-rendering="crispEdges">
+      <rect x="7" y="0" width="2" height="2" fill="#4a2d1b"/>
+      <rect x="4" y="2" width="8" height="2" fill="#4a2d1b"/>
+      <rect x="3" y="4" width="10" height="6" fill="#6b4429"/>
+      <rect x="2" y="5" width="2" height="4" fill="#6b4429"/>
+      <rect x="12" y="5" width="2" height="4" fill="#6b4429"/>
+      <rect x="2" y="6" width="1" height="2" fill="#c98d5a"/>
+      <rect x="13" y="6" width="1" height="2" fill="#c98d5a"/>
+      <rect x="4" y="5" width="8" height="5" fill="#c98d5a"/>
+      <rect x="5" y="8" width="6" height="3" fill="#e2b47e"/>
+      <rect x="6" y="6" width="1" height="2" fill="#201610"/>
+      <rect x="9" y="6" width="1" height="2" fill="#201610"/>
+      <rect x="7" y="9" width="1" height="1" fill="#5b3521"/>
+      <rect x="8" y="9" width="1" height="1" fill="#5b3521"/>
+      <rect x="7" y="10" width="2" height="1" fill="#7b442a"/>
+      <rect x="5" y="11" width="6" height="5" fill="#6b4429"/>
+      <rect x="6" y="12" width="4" height="3" fill="#c98d5a"/>
+      <rect x="3" y="11" width="2" height="4" fill="#6b4429"/>
+      <rect x="11" y="11" width="2" height="4" fill="#6b4429"/>
+      <rect x="3" y="15" width="2" height="1" fill="#c98d5a"/>
+      <rect x="11" y="15" width="2" height="1" fill="#c98d5a"/>
+      <rect x="5" y="16" width="3" height="3" fill="#6b4429"/>
+      <rect x="8" y="16" width="3" height="3" fill="#5a3822"/>
+      <rect x="5" y="19" width="3" height="2" fill="#c98d5a"/>
+      <rect x="8" y="19" width="3" height="2" fill="#b47a4c"/>
+    </symbol>
+  </svg>
+
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader-box">
+      <span class="loader-block" aria-hidden="true"></span>
+      <p class="loader-title">SUENO OCHO</p>
+      <p class="loader-sub">GENERATING WORLD<span class="dots" aria-hidden="true"></span></p>
+      <div class="loader-track" aria-hidden="true"><span class="loader-fill" id="loaderFill"></span></div>
+      <p class="loader-percent" id="loaderPercent">0%</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span class="toast-icon" aria-hidden="true">!</span>
+    <div>
+      <strong id="toastTitle">Welcome, explorer!</strong>
+      <span id="toastText">Your world is ready. Use the map to start exploring.</span>
+    </div>
+    <button class="toast-close" id="toastClose" type="button" aria-label="Dismiss notification">&times;</button>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="SUENO OCHO — back to spawn">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">SUENO<br>OCHO</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <a href="#top" class="nav-link is-active">Spawn</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Inventory</a>
+        <a href="#projects" class="nav-link">Builds</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="hero-grid-overlay" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> WORLD SPAWN POINT / 001</p>
+          <h1 id="heroTitle">Welcome to the world of <span class="pixel-title">SUENO OCHO</span></h1>
+          <p class="tagline">Building things. Exploring ideas. Creating experiences.</p>
+          <p class="hero-intro">Student developer, terminal tinkerer and curious explorer. I learn by taking things apart, running them, breaking them, and reading the logs until the “why” finally shows up.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#about">Explore World <span aria-hidden="true">→</span></a>
+            <a class="btn btn-secondary" href="#projects">My Projects <span aria-hidden="true">▦</span></a>
+          </div>
+          <dl class="hero-meta">
+            <div><dt>MODE</dt><dd>CURIOUS</dd></div>
+            <div><dt>OS</dt><dd>ARCH LINUX</dd></div>
+            <div><dt>STATUS</dt><dd><span class="status-dot" aria-hidden="true"></span>ONLINE</dd></div>
+          </dl>
+        </div>
+
+        <div class="world-scene reveal" role="img" aria-label="Original pixel-art landscape: a blocky monkey skin standing on grass blocks beneath floating blocks, trees and mountains">
+          <div class="scene-sky" aria-hidden="true"></div>
+          <div class="scene-sun" aria-hidden="true"></div>
+          <div class="cloud cloud-one" aria-hidden="true"></div>
+          <div class="cloud cloud-two" aria-hidden="true"></div>
+          <div class="cloud cloud-three" aria-hidden="true"></div>
+          <div class="mountain mountain-back" aria-hidden="true"></div>
+          <div class="mountain mountain-front" aria-hidden="true"></div>
+          <div class="scene-tree tree-left" aria-hidden="true"><span class="tree-trunk"></span><span class="tree-leaves"></span></div>
+          <div class="scene-tree tree-right" aria-hidden="true"><span class="tree-trunk"></span><span class="tree-leaves"></span></div>
+          <div class="floating-block fb-one" aria-hidden="true"></div>
+          <div class="floating-block fb-two" aria-hidden="true"></div>
+          <div class="floating-block fb-three" aria-hidden="true"></div>
+          <div class="scene-ground" aria-hidden="true"><span class="grass-layer"></span><span class="dirt-layer"></span></div>
+          <div class="scene-player" aria-hidden="true">
+            <svg viewBox="0 0 16 21" focusable="false"><use href="#pixel-player"></use></svg>
+          </div>
+          <span class="scene-label" aria-hidden="true">SPAWN / OVERWORLD</span>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span>SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">// PLAYER PROFILE</p>
+          <h2 id="aboutTitle">About the player</h2>
+          <p>A curious mind in a terminal-shaped habitat.</p>
+        </header>
+
+        <div class="about-grid">
+          <article class="panel profile-card reveal">
+            <div class="panel-label">PLAYER SKIN</div>
+            <div class="portrait">
+              <span class="portrait-glow" aria-hidden="true"></span>
+              <svg class="portrait-svg" viewBox="0 0 16 21" role="img" aria-labelledby="portraitTitle"><title id="portraitTitle">Pixel-art monkey skin avatar</title><use href="#pixel-player"></use></svg>
+            </div>
+            <p class="portrait-caption">THE GRIND MADE THIS FACE.</p>
+            <div class="profile-tags"><span>STUDENT</span><span>CREATOR</span><span>EXPLORER</span></div>
+          </article>
+
+          <article class="panel bio-card reveal">
+            <div class="panel-label">PLAYER LOG</div>
+            <h3>Hello, I'm Sueno.</h3>
+            <p>I'm a student developer who likes experimenting with technology. My natural habitat is a terminal window with too many tabs open, and my favourite debugging tool is stubbornness (backup: printing variables and pretending it was planned).</p>
+            <p>Right now I'm focused on programming fundamentals, small tools, scripts and interactive experiments — especially terminal interfaces and ASCII visuals. I treat every bug like a dungeon: annoying at first, but always hiding a lesson.</p>
+            <blockquote>"Build → error → debug → repeat."</blockquote>
+          </article>
+
+          <article class="panel stats-card reveal">
+            <div class="panel-label">PLAYER STATISTICS</div>
+            <div class="xp-row"><span class="xp-level">LVL <strong>08</strong></span><span class="xp-label">EXPERIENCE</span></div>
+            <div class="xp-track" role="img" aria-label="Experience bar, 68 percent full"><span class="xp-fill"></span></div>
+            <div class="hearts" role="img" aria-label="Five full hearts"><span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span></div>
+            <dl class="stat-list">
+              <div><dt>CLASS</dt><dd>STUDENT DEV</dd></div>
+              <div><dt>MODE</dt><dd>CURIOUS</dd></div>
+              <div><dt>LOCATION</dt><dd>THE TERMINAL</dd></div>
+              <div><dt>DIFFICULTY</dt><dd>ENDLESS ERRORS</dd></div>
+            </dl>
+            <p class="stat-note">I don't wait for levels. I take them.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills" aria-labelledby="skillsTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">// HOTBAR &amp; INVENTORY</p>
+          <h2 id="skillsTitle">Skills inventory</h2>
+          <p>Eight slots of tools, interests and things currently in progress.</p>
+        </header>
+
+        <div class="inventory-shell reveal">
+          <div class="inventory-top"><span>INVENTORY</span><span class="inventory-sort">SORT: CURIOUS →</span></div>
+          <ul class="inventory-grid">
+            <li class="inv-slot" tabindex="0" aria-label="Python — confirmed programming language"><span class="slot-icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" loading="lazy"></span><span class="slot-name">PYTHON</span><span class="slot-tip">CONFIRMED LANGUAGE</span></li>
+            <li class="inv-slot" tabindex="0" aria-label="C sharp — confirmed programming language"><span class="slot-icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="" loading="lazy"></span><span class="slot-name">C SHARP</span><span class="slot-tip">CONFIRMED LANGUAGE</span></li>
+            <li class="inv-slot" tabindex="0" aria-label="Git and GitHub — confirmed version control"><span class="slot-icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" loading="lazy"></span><span class="slot-name">GIT / GITHUB</span><span class="slot-tip">VERSION CONTROL</span></li>
+            <li class="inv-slot" tabindex="0" aria-label="Shells — Bash and Zsh"><span class="slot-icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" alt="" loading="lazy"></span><span class="slot-name">BASH / ZSH</span><span class="slot-tip">SHELLS ONLINE</span></li>
+            <li class="inv-slot" tabindex="0" aria-label="Editors — Neovim, VS Code and Vim"><span class="slot-icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg" alt="" loading="lazy"></span><span class="slot-name">EDITORS</span><span class="slot-tip">NVIM / VS CODE / VIM</span></li>
+            <li class="inv-slot" tabindex="0" aria-label="Arch Linux — operating system"><span class="slot-icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/archlinux/archlinux-original.svg" alt="" loading="lazy"></span><span class="slot-name">ARCH LINUX</span><span class="slot-tip">I USE ARCH BTW</span></li>
+            <li class="inv-slot" tabindex="0" aria-label="Terminal interfaces and ASCII visuals"><span class="slot-icon" aria-hidden="true"><img src="https://api.iconify.design/lucide/terminal.svg?color=%2316291a" alt="" loading="lazy"></span><span class="slot-name">ASCII / TUI</span><span class="slot-tip">CREATIVE INTERFACES</span></li>
+            <li class="inv-slot" tabindex="0" aria-label="Web fundamentals — HTML, CSS and JavaScript"><span class="slot-icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="" loading="lazy"></span><span class="slot-name">WEB BASICS</span><span class="slot-tip">HTML / CSS / JS</span></li>
+          </ul>
+          <div class="inventory-bottom"><span>8 / 36 SLOTS USED</span><span class="inventory-hint">HOVER OR FOCUS A SLOT</span></div>
+        </div>
+        <p class="section-footnote reveal">I don't collect skills. I collect wins.</p>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">// WORLD BUILDS</p>
+          <h2 id="projectsTitle">Projects &amp; builds</h2>
+          <p id="projectsSubtitle">A few item-slot cards ready to be replaced with real work.</p>
+          <p class="featured-repo"><a href="https://github.com/SuenoOcho/Insight8x8" target="_blank" rel="noopener noreferrer">★ FEATURED REPO: INSIGHT8X8 ↗</a></p>
+        </header>
+
+        <div class="notice reveal" id="projectsNotice"><span aria-hidden="true">!</span><p id="projectsNoticeText"><strong>NO DRAFTS HERE:</strong> only the work I'm willing to show.</p></div>
+
+        <ul class="project-grid" id="projectGrid">
+          <li class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">▦</div>
+            <span class="project-badge is-live">FEATURED REPO</span>
+            <h3>Insight8x8</h3>
+            <p>Proof of work. Open the repo.</p>
+            <ul class="tag-list"><li>GITHUB</li><li>PUBLIC</li></ul>
+            <a class="link-slot" href="https://github.com/SuenoOcho/Insight8x8" target="_blank" rel="noopener noreferrer">OPEN REPOSITORY ↗</a>
+          </li>
+          <li class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">&gt;_</div>
+            <span class="project-badge">BUILT DIFFERENT</span>
+            <h3>Build 02 — Terminal Toolkit</h3>
+            <p>I turn messy problems into clean commands.</p>
+            <ul class="tag-list"><li>PYTHON</li><li>BASH</li></ul>
+            <span class="link-slot" aria-disabled="true">DETAILS SOON — STAY SHARP</span>
+          </li>
+          <li class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">◆</div>
+            <span class="project-badge">BUILT DIFFERENT</span>
+            <h3>Build 03 — Pixel Lab</h3>
+            <p>Ideas are cheap. Shipping is the flex.</p>
+            <ul class="tag-list"><li>CREATIVE</li><li>WIP</li></ul>
+            <span class="link-slot" aria-disabled="true">DETAILS SOON — STAY SHARP</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-copy">
+            <p class="eyebrow">// MULTIPLAYER REQUEST</p>
+            <h2 id="contactTitle">Let's build something together</h2>
+            <p>Have an idea, a question, or just want to say hello? My inbox is open — send a signal and I'll get back to you.</p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:ichbinkaka03016@gmail.com?subject=Hello%20from%20your%20portfolio&amp;body=Hey%20Sueno%2C%0A%0AI%20visited%20your%20portfolio%20and%20wanted%20to%20say%20hello.">Send a message <span aria-hidden="true">✉</span></a>
+              <a class="btn btn-secondary" href="https://github.com/SuenoOcho" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="contact-links" role="group" aria-label="Contact links">
+            <a class="contact-link" href="https://github.com/SuenoOcho" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">&gt;_</span><span><strong>GITHUB</strong><small>github.com/SuenoOcho</small></span><span aria-hidden="true">↗</span></a>
+            <a class="contact-link" href="mailto:ichbinkaka03016@gmail.com?subject=Hello%20from%20your%20portfolio&amp;body=Hey%20Sueno%2C%0A%0AI%20visited%20your%20portfolio%20and%20wanted%20to%20say%20hello."><span aria-hidden="true">✉</span><span><strong>EMAIL</strong><small>ichbinkaka03016@gmail.com</small></span><span aria-hidden="true">↗</span></a>
+            <a class="contact-link" href="https://www.instagram.com/rabbit.7633634/" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">▣</span><span><strong>INSTAGRAM</strong><small>@rabbit.7633634</small></span><span aria-hidden="true">↗</span></a>
+            <span class="contact-link is-placeholder" aria-disabled="true"><span aria-hidden="true">◇</span><span><strong>LINKEDIN — SOON</strong><small>next checkpoint</small></span><span aria-hidden="true">—</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><span class="brand-mark small" aria-hidden="true"></span><span>SUENO OCHO</span></div>
+      <p>Building things. Exploring ideas. Creating experiences.</p>
+      <div class="footer-meta"><span>© <span id="year">2026</span> SUENO OCHO</span><a href="#top">Back to top ↑</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
