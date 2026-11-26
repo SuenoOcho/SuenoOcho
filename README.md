@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://suenoocho.github.io/SuenoOcho/" style="text-decoration: none;">
+<a href="https://suenoocho.github.io/SuenoOcho/" style="text-decoration: none; color: inhert;">
 <pre>
 +----------------------------------------------------+
 | #### #..# #### #..# .##.   .##. .### #..# .##.     |
