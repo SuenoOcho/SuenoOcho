@@ -1,8 +1,6 @@
 <div align="center">
 
-<a href="https://suenoocho.github.io/SuenoOcho/" 
-  style="text-decoration: none !important; color: inherit !important; display: block;">
-<pre style="text-decoration: none !important; color: inherit !important; cursor: pointer;">
+<pre>
 +----------------------------------------------------+
 | #### #..# #### #..# .##.   .##. .### #..# .##.     |
 | #... #..# #... ##.# #..#   #..# #... #..# #..#     |
@@ -11,9 +9,8 @@
 | #### .##. #### #..# .##.   .##. .### #..# .##.     |
 +----------------------------------------------------+
 </pre>
-</a>
 
-**USERNAME : Sueno Ocho**  
+<a href="https://suenoocho.github.io/SuenoOcho/">**USERNAME : Sueno Ocho** </a> 
 **ROLE : STUDENT**  
 **STATUS : ENDLESS ERRORS**  
 **MINDSET : CONTROL IS ALL I NEED!!**
