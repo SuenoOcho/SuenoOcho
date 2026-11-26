@@ -10,7 +10,7 @@
 +----------------------------------------------------+
 </pre>
 
-<a href="https://suenoocho.github.io/SuenoOcho/">**USERNAME : Sueno Ocho** </a> 
+**USERNAME : Sueno Ocho**
 **ROLE : STUDENT**  
 **STATUS : ENDLESS ERRORS**  
 **MINDSET : CONTROL IS ALL I NEED!!**
