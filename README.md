@@ -14,7 +14,7 @@
 **ROLE : STUDENT**  
 **STATUS : ENDLESS ERRORS**  
 **MINDSET : CONTROL IS ALL I NEED!!**<br>
-<a href="https://suenoocho.github.io/SuenoOcho/">**Creative Space**</a>
+<a href="https://suenoocho.github.io/SuenoOcho/">**PORTFOLIO: CREATIVE SPACE**</a>
 
 `THEME : #050B07 / #00FF41 / MUTED GREEN / MONOSPACE / CRT-SCANLINE`
 
