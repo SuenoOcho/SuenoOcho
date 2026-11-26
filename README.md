@@ -1,8 +1,8 @@
 <div align="center">
 
 <a href="https://suenoocho.github.io/SuenoOcho/" 
-  style="text-decoration: none !important; color: inherit; border: none;">
-<pre style="text-decoration: none !important; color: inherit; border: none;">
+  style="text-decoration: none !important; color: inherit !important; display: block;">
+<pre style="text-decoration: none !important; color: inherit !important; cursor: pointer;">
 +----------------------------------------------------+
 | #### #..# #### #..# .##.   .##. .### #..# .##.     |
 | #... #..# #... ##.# #..#   #..# #... #..# #..#     |
