@@ -10,7 +10,7 @@
 +----------------------------------------------------+
 </pre>
 
-**USERNAME : Sueno Ocho**
+**USERNAME : Sueno Ocho**<br>
 **ROLE : STUDENT**  
 **STATUS : ENDLESS ERRORS**  
 **MINDSET : CONTROL IS ALL I NEED!!**<br>
